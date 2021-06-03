@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   pipex.c                                            :+:      :+:    :+:   */
+/*   pipex_bonus.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ssamadi <ssamadi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/29 11:59:25 by ssamadi           #+#    #+#             */
-/*   Updated: 2021/05/30 20:42:01 by ssamadi          ###   ########.fr       */
+/*   Updated: 2021/05/31 12:09:25 by ssamadi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "pipe_h.h"
+#include "pipe_h_bonus.h"
 
 void	add_all(t_lst **cmd_list, char **av, char **envp, t_norm **norm)
 {
@@ -78,4 +78,5 @@ int	main(int ac, char *av[], char **envp)
 	}
 	else
 		write(2, "error sytax", 11);
+	return (0);
 }

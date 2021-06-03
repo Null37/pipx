@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   check_command.c                                    :+:      :+:    :+:   */
+/*   check_command_bonus.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ssamadi <ssamadi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/16 17:47:01 by ssamadi           #+#    #+#             */
-/*   Updated: 2021/05/30 17:36:30 by ssamadi          ###   ########.fr       */
+/*   Updated: 2021/05/31 12:21:46 by ssamadi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "pipe_h.h"
+#include "pipe_h_bonus.h"
 
 int	check_if_command_is_exist(char *path_file)
 {

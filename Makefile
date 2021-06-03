@@ -6,13 +6,13 @@
 #    By: ssamadi <ssamadi@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/30 17:23:30 by ssamadi           #+#    #+#              #
-#    Updated: 2021/05/30 20:41:36 by ssamadi          ###   ########.fr        #
+#    Updated: 2021/05/31 12:24:41 by ssamadi          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = pipex
 
-FLAGS = -Wall -Wextra -Werror
+FLAGS = -Wall -Wextra -Wall
 
 SRC = check_cmd3.c\
 	check_cmd_2.c\
@@ -25,6 +25,19 @@ SRC = check_cmd3.c\
 	pipe_2.c\
 	fun_work_pip.c\
 	need_pip.c
+
+SRC_B = bonus/check_cmd3_bonus.c\
+	bonus/check_cmd_2_bonus.c\
+	bonus/check_command_bonus.c\
+	bonus/file_pipe_bonus.c\
+	bonus/fun_work_pip_bonus.c\
+	bonus/need_pip_bonus.c\
+	bonus/path_bonus.c\
+	bonus/pipe_2_bonus.c\
+	bonus/pipe_fun_bonus.c\
+	bonus/pipex_bonus.c\
+	bonus/substr_bonus.c
+
 CC = gcc
 
 all: libft1 $(NAME)
@@ -35,6 +48,11 @@ $(NAME): $(SRC)
 
 libft1:
 	cd libft && $(MAKE) clean
+
+bonus: $(SRC_B)
+		cp ./libft1/libft.a .
+		$(CC) $(FLAGS) $(SRC_B) libft.a -o $(NAME)
+
 
 clean: libftclean
 
